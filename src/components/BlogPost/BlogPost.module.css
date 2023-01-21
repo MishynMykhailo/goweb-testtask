@@ -1,0 +1,35 @@
+.div {
+  padding-top: 48px;
+  padding-bottom: 58px;
+}
+.preH2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.375;
+  color: white;
+  margin-bottom: 24px;
+}
+.postH2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.btn {
+  padding: 16px 32px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+}

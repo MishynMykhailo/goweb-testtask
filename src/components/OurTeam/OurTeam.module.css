@@ -1,0 +1,51 @@
+.div {
+  padding-top: 72px;
+  padding-bottom: 50px;
+}
+.preH2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: #333333;
+
+  margin-bottom: 16px;
+}
+.h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.375;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 24px;
+}
+.postH2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: #333333;
+  padding-bottom: 63px;
+}
+.ul {
+  display: grid;
+  gap: 30px;
+}
+.img {
+  margin-bottom: 16px;
+}
+.personName {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.position {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #333333;
+}

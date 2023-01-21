@@ -1,0 +1,39 @@
+.section {
+  padding-top: 62px;
+  padding-bottom: 104px;
+}
+.mainText {
+  margin: 0 auto;
+  width: 241px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.35;
+  color: white;
+}
+.secondaryText {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.23;
+  color: white;
+}
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  padding: 16px 32px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
