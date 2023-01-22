@@ -1,13 +1,10 @@
 import React from "react";
-import PhotoSection from "../PhotoSection/PhotoSection";
-
 import s from "./BlogPost.module.css";
 import coffeImg from "../../images/images/home/blog.jpg";
 const BlogPost = () => {
   return (
     <div className={s.div}>
       <img className={s.img} src={coffeImg} alt="coffeImg" />
-
       <div className={s.padding}>
         <p className={s.preH2}>April 16 2020</p>
         <h2 className={s.h2}>Blog Post One</h2>

@@ -10,7 +10,9 @@
     padding-right: 22px;
   }
   .input {
-    width: 280px;
+    width: 264px;
+    font-size: 16px;
+    line-height: 1.43;
   }
   .h2 {
     margin-bottom: 69px;
@@ -34,6 +36,8 @@
   }
   .input {
     width: 320px;
+    font-size: 18px;
+    line-height: 1.38;
   }
   .h2 {
     margin-bottom: 24px;
@@ -44,8 +48,25 @@
 
 @media screen and (min-width: 1360px) {
   .padding {
+    width: 642px;
     padding-top: 56px;
     padding-bottom: 77px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .img {
+    width: 670px;
+    object-fit: cover;
+  }
+  .input {
+    width: 626px;
+    font-size: 18px;
+    line-height: 1.38;
+  }
+  .h2 {
+    margin-bottom: 31px;
+    font-size: 40px;
+    line-height: 1.35;
   }
 }
 .div {

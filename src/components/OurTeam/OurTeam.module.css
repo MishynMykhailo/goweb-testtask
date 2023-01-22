@@ -8,6 +8,22 @@
   .ul {
     gap: 30px;
   }
+  .preH2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+  .h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.375;
+  }
+  .postH2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    margin-bottom: 63px;
+  }
 }
 @media screen and (min-width: 768px) {
   .padding {
@@ -20,12 +36,46 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
   }
+  .preH2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+  .h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+  .postH2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1360px) {
   .padding {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .preH2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+  .postH2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    margin-bottom: 36px;
   }
 }
 .div {
@@ -33,29 +83,18 @@
   background-color: #ffffff;
 }
 .preH2 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.375;
   text-align: center;
   color: #333333;
-
   margin-bottom: 16px;
 }
 .h2 {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.375;
   text-align: center;
   color: #333333;
   margin-bottom: 24px;
 }
 .postH2 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.375;
   text-align: center;
   color: #333333;
-  padding-bottom: 63px;
 }
 .ul {
   display: grid;
