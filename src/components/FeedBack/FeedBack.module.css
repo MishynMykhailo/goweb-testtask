@@ -1,21 +1,69 @@
-.div {
-  padding-top: 51px;
-  padding-bottom: 25px;
+@media screen and (min-width: 320px) {
+  .div {
+    display: flex;
+    flex-direction: column;
+  }
+  .padding {
+    padding-top: 51px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .input {
+    width: 280px;
+  }
+  .h2 {
+    margin-bottom: 69px;
+    font-size: 32px;
+    line-height: 1.5;
+  }
 }
+@media screen and (min-width: 768px) {
+  .div {
+    flex-direction: row;
+  }
+  .padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .img {
+    width: 368px;
+    object-fit: cover;
+  }
+  .input {
+    width: 320px;
+  }
+  .h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .padding {
+    padding-top: 56px;
+    padding-bottom: 77px;
+  }
+}
+.div {
+  background-color: #f4f4f4;
+}
+
 .form {
   display: flex;
   flex-direction: column;
 }
 .h2 {
-  margin-bottom: 69px;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.5;
   color: #333333;
 }
 .input {
   padding: 16px 8px;
   border: none;
+  outline: none;
 }
 .input:not(:last-of-type) {
   margin-bottom: 16px;

@@ -27,23 +27,25 @@ const OurTeam = () => {
   ];
   return (
     <div className={s.div}>
-      <p className={s.preH2}>This is what we do</p>
-      <h2 className={s.h2}>Business Cases</h2>
-      <p className={s.postH2}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-        sapiente!
-      </p>
-      <ul className={s.ul}>
-        {images.map(({ name, img, personName, position }) => {
-          return (
-            <li className={s.li} key={name}>
-              <img className={s.img} src={img} alt={name} />
-              <p className={s.personName}>{personName}</p>
-              <p className={s.position}>{position}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <div className={s.padding}>
+        <p className={s.preH2}>Who we are</p>
+        <h2 className={s.h2}>Our Professional Team</h2>
+        <p className={s.postH2}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          sapiente!
+        </p>
+        <ul className={s.ul}>
+          {images.map(({ name, img, personName, position }) => {
+            return (
+              <li className={s.li} key={name}>
+                <img className={s.img} src={img} alt={name} />
+                <p className={s.personName}>{personName}</p>
+                <p className={s.position}>{position}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

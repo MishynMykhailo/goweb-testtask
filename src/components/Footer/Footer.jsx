@@ -13,17 +13,19 @@ const Footer = () => {
   ];
   return (
     <div className={s.div}>
-      <ul className={s.ul}>
-        {social.map(({ name, img }) => {
-          return (
-            <li className={s.li} key={name}>
-              <img className={s.img} src={img} alt={name} />
-            </li>
-          );
-        })}
-        ;
-      </ul>
-      <p className={s.p}>Copyright © 2021 - FinanceLedger</p>
+      <div className={s.padding}>
+        <ul className={s.ul}>
+          {social.map(({ name, img }) => {
+            return (
+              <li className={s.li} key={name}>
+                <img className={s.img} src={img} alt={name} />
+              </li>
+            );
+          })}
+          ;
+        </ul>
+        <p className={s.p}>Copyright © 2021 - FinanceLedger</p>
+      </div>
     </div>
   );
 };
