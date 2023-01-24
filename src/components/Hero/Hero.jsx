@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Header/Header";
+
 import s from "./Hero.module.css";
 import { ReactComponent as ArrowNext } from "../../images/images/next.svg";
 const Hero = () => {

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import svgLogo from "../../images/logoMobile.svg";
+import React, { useEffect } from "react";
+import { ReactComponent as SvgLogo } from "../../images/logoMobile.svg";
 import s from "./Header.module.css";
 const Header = () => {
   const checkOnPosition = (elem, x, y) => {
@@ -49,7 +49,7 @@ const Header = () => {
     <div className={s.div} id="header">
       <div className={s.padding}>
         <a href="/">
-          <img src={svgLogo} alt="logo" className={s.img}></img>
+          <SvgLogo className={s.img} />
         </a>
         <nav className={s.navMenu}>
           <ul className={s.ul}>

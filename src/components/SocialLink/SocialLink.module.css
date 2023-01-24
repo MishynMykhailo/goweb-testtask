@@ -1,0 +1,20 @@
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.a {
+  fill: var(--primary-text-color);
+}
+.a:hover,
+.a:focus {
+  fill: var(--accent-color);
+  opacity: 0.8;
+}

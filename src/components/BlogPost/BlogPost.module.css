@@ -31,7 +31,7 @@
     flex-direction: row-reverse;
   }
   .padding {
-    width: 400px;
+    width: 336px;
     padding-top: 59px;
     padding-bottom: 59px;
     padding-left: 32px;
@@ -40,6 +40,7 @@
   .img {
     width: 368px;
     object-fit: cover;
+    height: 100%;
   }
   .preH2 {
     font-weight: 400;
