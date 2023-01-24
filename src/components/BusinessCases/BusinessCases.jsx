@@ -17,7 +17,7 @@ const BusinessCases = () => {
     { name: "cases4", img: cases4 },
   ];
   return (
-    <div className={s.div}>
+    <div className={s.div} id="Cases">
       <div className={s.padding}>
         <p className={s.preH2}>This is what we do</p>
         <h2 className={s.h2}>Business Cases</h2>

@@ -27,9 +27,11 @@
 }
 @media screen and (min-width: 768px) {
   .div {
+    justify-content: center;
     flex-direction: row-reverse;
   }
   .padding {
+    width: 400px;
     padding-top: 59px;
     padding-bottom: 59px;
     padding-left: 32px;
@@ -108,4 +110,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
+  transition: var(--main-transition);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-text-color);
+  color: #0284d0;
+  border-color: #0284d0;
 }

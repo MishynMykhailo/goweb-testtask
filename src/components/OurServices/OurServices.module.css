@@ -24,9 +24,15 @@
     font-size: 16px;
     line-height: 1.375;
   }
+  .btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+  }
 }
 @media screen and (min-width: 768px) {
   .div {
+    justify-content: center;
     flex-direction: row;
   }
   .padding {
@@ -51,6 +57,11 @@
     line-height: 1.2;
   }
   .postH2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+  }
+  .btn {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
@@ -102,12 +113,18 @@
   margin-bottom: 24px;
 }
 .btn {
+  display: flex;
   padding: 16px 32px;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
   color: white;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.375;
+  align-items: center;
+  transition: var(--main-transition);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-text-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }

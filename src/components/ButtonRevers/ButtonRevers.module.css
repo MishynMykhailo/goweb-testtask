@@ -1,0 +1,46 @@
+@media screen and (min-width: 320px) {
+  .btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+.btn {
+  display: flex;
+  padding: 16px 32px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  align-items: center;
+  fill: var(--primary-text-color);
+  transition: var(--main-transition);
+}
+.btn:hover,
+.btn:focus {
+  background-color: white;
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.arrowNext {
+  width: 9px;
+  height: 18px;
+  margin-right: 8px;
+}

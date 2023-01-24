@@ -7,11 +7,13 @@ import OurServices from "../OurServices/OurServices";
 import OurTeam from "../OurTeam/OurTeam";
 import FeedBack from "../FeedBack/FeedBack";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 function App() {
   return (
     <>
       <Container>
+        <Header />
         <Hero />
 
         <OurServices />

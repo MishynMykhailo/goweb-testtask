@@ -1,10 +1,9 @@
 import React from "react";
 import s from "./OurServices.module.css";
 import backgroundPeople from "../../images/images/home/people.jpg";
-
 const OurServices = () => {
   return (
-    <div className={s.div}>
+    <div className={s.div} id="About">
       <img className={s.img} src={backgroundPeople} alt="backgroundPeople" />
       <div className={s.padding}>
         <p className={s.preH2}>What you are looking for</p>

@@ -3,7 +3,7 @@ import s from "./BlogPost.module.css";
 import coffeImg from "../../images/images/home/blog.jpg";
 const BlogPost = () => {
   return (
-    <div className={s.div}>
+    <div className={s.div} id="Blog">
       <img className={s.img} src={coffeImg} alt="coffeImg" />
       <div className={s.padding}>
         <p className={s.preH2}>April 16 2020</p>
