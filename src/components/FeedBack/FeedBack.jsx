@@ -55,9 +55,10 @@ const FeedBack = () => {
               value={userName}
               className={s.input}
               type="text"
-              placeholder="Enter your name"
+              placeholder=" "
               onChange={(e) => formHandler(e)}
             />
+            <p className={s.plf}>Enter your name</p>
           </label>
           <label className={s.labelUserEmail}>
             <input
@@ -66,7 +67,7 @@ const FeedBack = () => {
               value={userEmail}
               className={s.input}
               type="text"
-              placeholder="Enter email*"
+              placeholder=" "
               onChange={(e) => formHandler(e)}
               required
               title=""
@@ -78,6 +79,7 @@ const FeedBack = () => {
             ) : (
               <p className={s.errorMessage}> </p>
             )}
+            <p className={s.plf}>Enter email*</p>
           </label>
 
           <button type="submit" className={s.btn}>
