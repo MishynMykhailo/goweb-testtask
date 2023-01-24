@@ -1,21 +1,9 @@
 import React from "react";
 import s from "./BusinessCases.module.css";
-import cases1 from "../../images/images/cases/cases1.jpg";
-import cases2 from "../../images/images/cases/cases2.jpg";
-import cases3 from "../../images/images/cases/cases3.jpg";
-import cases4 from "../../images/images/cases/cases4.jpg";
-import cases5 from "../../images/images/cases/cases5.jpg";
-import cases7 from "../../images/images/cases/cases7.jpg";
+import buisnessCasesImages from "../data/buisnessCasesImages";
+import ImagePictures from "../ImagePictures/ImagePictures";
 
 const BusinessCases = () => {
-  const images = [
-    { name: "cases1", img: cases1 },
-    { name: "cases3", img: cases3 },
-    { name: "cases5", img: cases5 },
-    { name: "cases7", img: cases7 },
-    { name: "cases2", img: cases2 },
-    { name: "cases4", img: cases4 },
-  ];
   return (
     <div className={s.div} id="Cases">
       <div className={s.padding}>
@@ -26,13 +14,23 @@ const BusinessCases = () => {
           sapiente!
         </p>
         <ul className={s.ul}>
-          {images.map(({ name, img }) => {
-            return (
-              <li className={s.li} key={name}>
-                <img src={img} alt={name} />
-              </li>
-            );
-          })}
+          {buisnessCasesImages.map(
+            ({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
+              return (
+                <li key={id}>
+                  <ImagePictures
+                    key={id}
+                    jpg1x={jpg1x}
+                    jpg2x={jpg2x}
+                    webp1x={webp1x}
+                    webp2x={webp2x}
+                    alt={alt}
+                    className={s.img}
+                  />
+                </li>
+              );
+            }
+          )}
         </ul>
       </div>
     </div>

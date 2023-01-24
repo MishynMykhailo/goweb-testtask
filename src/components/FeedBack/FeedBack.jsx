@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import s from "./FeedBack.module.css";
-import contactPhoto from "../../images/images/home/contact.jpg";
+import feedbackImages from "../data/feedbackImages";
 import { ReactComponent as ErrorImg } from "../../images/images/form/worning.svg";
+import ImagePictures from "../ImagePictures/ImagePictures";
+
 const FeedBack = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -30,7 +32,19 @@ const FeedBack = () => {
   };
   return (
     <div className={s.div} id="Contact">
-      <img className={s.img} src={contactPhoto} alt="contactPhoto" />
+      {feedbackImages.map(({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
+        return (
+          <ImagePictures
+            key={id}
+            jpg1x={jpg1x}
+            jpg2x={jpg2x}
+            webp1x={webp1x}
+            webp2x={webp2x}
+            alt={alt}
+            className={s.img}
+          />
+        );
+      })}
       <div className={s.padding}>
         <h2 className={s.h2}>Request Callback </h2>
         <form className={s.form} onSubmit={formSubmit}>

@@ -1,10 +1,24 @@
 import React from "react";
 import s from "./BlogPost.module.css";
-import coffeImg from "../../images/images/home/blog.jpg";
+import blogPostImages from "../data/blogPostImages";
+import ImagePictures from "../ImagePictures/ImagePictures";
+
 const BlogPost = () => {
   return (
     <div className={s.div} id="Blog">
-      <img className={s.img} src={coffeImg} alt="coffeImg" />
+      {blogPostImages.map(({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
+        return (
+          <ImagePictures
+            key={id}
+            jpg1x={jpg1x}
+            jpg2x={jpg2x}
+            webp1x={webp1x}
+            webp2x={webp2x}
+            alt={alt}
+            className={s.img}
+          />
+        );
+      })}
       <div className={s.padding}>
         <p className={s.preH2}>April 16 2020</p>
         <h2 className={s.h2}>Blog Post One</h2>

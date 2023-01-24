@@ -1,10 +1,23 @@
 import React from "react";
 import s from "./OurServices.module.css";
-import backgroundPeople from "../../images/images/home/people.jpg";
+import ourServicesImages from "../data/ourServicesImages";
+import ImagePictures from "../ImagePictures/ImagePictures";
 const OurServices = () => {
   return (
     <div className={s.div} id="About">
-      <img className={s.img} src={backgroundPeople} alt="backgroundPeople" />
+      {ourServicesImages.map(({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
+        return (
+          <ImagePictures
+            key={id}
+            jpg1x={jpg1x}
+            jpg2x={jpg2x}
+            webp1x={webp1x}
+            webp2x={webp2x}
+            alt={alt}
+            className={s.img}
+          />
+        );
+      })}
       <div className={s.padding}>
         <p className={s.preH2}>What you are looking for</p>
         <h2 className={s.h2}>We provide bespoke solutions</h2>

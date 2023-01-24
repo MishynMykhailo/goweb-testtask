@@ -1,30 +1,8 @@
 import React from "react";
 import s from "./OurTeam.module.css";
-import person1 from "../../images/images/team/person1.jpg";
-import person2 from "../../images/images/team/person2.jpg";
-import person3 from "../../images/images/team/person3.jpg";
+import ourTeamImages from "../data/ourTeamImages";
 
 const OurTeam = () => {
-  const images = [
-    {
-      name: "person1",
-      img: person1,
-      personName: "John Doe",
-      position: "President",
-    },
-    {
-      name: "person2",
-      img: person2,
-      personName: "Jane Doe",
-      position: "Vice President",
-    },
-    {
-      name: "person3",
-      img: person3,
-      personName: "Steve Smith",
-      position: "Marketing Head",
-    },
-  ];
   return (
     <div className={s.div}>
       <div className={s.padding}>
@@ -35,15 +13,37 @@ const OurTeam = () => {
           sapiente!
         </p>
         <ul className={s.ul}>
-          {images.map(({ name, img, personName, position }) => {
-            return (
-              <li className={s.li} key={name}>
-                <img className={s.img} src={img} alt={name} />
-                <p className={s.personName}>{personName}</p>
-                <p className={s.position}>{position}</p>
-              </li>
-            );
-          })}
+          {ourTeamImages.map(
+            ({
+              id,
+
+              jpg1x,
+              jpg2x,
+              webp1x,
+              webp2x,
+              personName,
+              position,
+              alt,
+            }) => {
+              return (
+                <li className={s.li} key={id}>
+                  <picture>
+                    <source
+                      srcSet={`${webp1x} 1x, ${webp2x} 2x`}
+                      type="image/webp"
+                    />
+                    <source
+                      srcSet={`${jpg1x} 1x, ${jpg2x} 2x`}
+                      type="image/jpeg"
+                    />
+                    <img className={s.img} src="#" alt={alt} />
+                  </picture>
+                  <p className={s.personName}>{personName}</p>
+                  <p className={s.position}>{position}</p>
+                </li>
+              );
+            }
+          )}
         </ul>
       </div>
     </div>
