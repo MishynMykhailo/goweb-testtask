@@ -11,17 +11,17 @@ const encode = (data) => {
 };
 
 const FeedBack = () => {
-  const [userName, setUserName] = useState("");
-  const [userEmail, setUserEmail] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [errorValidation, setErrorValidation] = useState(false);
   const formHandler = (e) => {
     const { name, value } = e.target;
     switch (name) {
-      case "userName":
-        setUserName(value);
+      case "name":
+        setName(value);
         break;
-      case "userEmail":
-        setUserEmail(value);
+      case "email":
+        setEmail(value);
         break;
       default:
         break;
@@ -29,7 +29,7 @@ const FeedBack = () => {
   };
   const formHandlerSubmit = async (e) => {
     e.preventDefault();
-    const { userEmail: emailTarget, userName: nameTarget } = e.target.elements;
+    const { email: emailTarget, name: nameTarget } = e.target.elements;
     const { name: nameEm, value: valueEm } = emailTarget;
     const { name: nameNa, value: valueNa } = nameTarget;
     const inputValues = {
@@ -37,7 +37,7 @@ const FeedBack = () => {
       [nameNa]: valueNa,
     };
     console.log(inputValues);
-    if (userEmail.trim() === "" || ![...userEmail].includes("@")) {
+    if (email.trim() === "" || ![...email].includes("@")) {
       setErrorValidation(true);
       return;
     }
@@ -49,16 +49,11 @@ const FeedBack = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "feedback", ...inputValues }),
     });
-    try {
-      alert("Success!");
-    } catch (error) {
-      alert(error);
-    }
   };
 
   const reset = () => {
-    setUserName("");
-    setUserEmail("");
+    setName("");
+    setEmail("");
   };
 
   return (
@@ -84,11 +79,11 @@ const FeedBack = () => {
           className={s.form}
           onSubmit={formHandlerSubmit}
         >
-          <label className={s.labelUserName}>
+          <label className={s.labelName}>
             <input
-              id="userName"
-              name="userName"
-              value={userName}
+              id="name"
+              name="name"
+              value={name}
               className={s.input}
               type="text"
               placeholder=" "
@@ -96,17 +91,16 @@ const FeedBack = () => {
             />
             <p className={s.plf}>Enter your name</p>
           </label>
-          <label className={s.labelUserEmail}>
+          <label className={s.labelEmail}>
             <input
-              id="userEmail"
-              name="userEmail"
-              value={userEmail}
+              id="email"
+              name="email"
+              value={email}
               className={s.input}
               type="text"
               placeholder=" "
               onChange={(e) => formHandler(e)}
               required
-              title=""
             />
             {errorValidation ? (
               <p className={s.errorMessage}>
