@@ -75,7 +75,7 @@ const buisnessCasesImages = [
     alt: "cases5",
   },
   {
-    id: 7,
+    id: 6,
     name: "cases7",
     jpg1x: cases7JPG1x,
     jpg2x: cases7JPG2x,
