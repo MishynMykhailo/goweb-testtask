@@ -4,6 +4,12 @@ import feedbackImages from "../data/feedbackImages";
 import { ReactComponent as ErrorImg } from "../../images/images/form/worning.svg";
 import ImagePictures from "../ImagePictures/ImagePictures";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 const FeedBack = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -21,15 +27,40 @@ const FeedBack = () => {
         break;
     }
   };
-  const formSubmit = (e) => {
+  const formHandlerSubmit = async (e) => {
     e.preventDefault();
-
+    const { userEmail: emailTarget, userName: nameTarget } = e.target.elements;
+    const { name: nameEm, value: valueEm } = emailTarget;
+    const { name: nameNa, value: valueNa } = nameTarget;
+    const inputValues = {
+      [nameEm]: valueEm,
+      [nameNa]: valueNa,
+    };
+    console.log(inputValues);
     if (userEmail.trim() === "" || ![...userEmail].includes("@")) {
       setErrorValidation(true);
       return;
     }
     setErrorValidation(false);
+    reset();
+
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "feedback", ...inputValues }),
+    });
+    try {
+      alert("Success!");
+    } catch (error) {
+      alert(error);
+    }
   };
+
+  const reset = () => {
+    setUserName("");
+    setUserEmail("");
+  };
+
   return (
     <div className={s.div} id="Contact">
       {feedbackImages.map(({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
@@ -51,7 +82,7 @@ const FeedBack = () => {
           name="feedback"
           method="post"
           className={s.form}
-          onSubmit={formSubmit}
+          onSubmit={formHandlerSubmit}
         >
           <label className={s.labelUserName}>
             <input

@@ -3,14 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "author": "Mishyn Mykhailo <misham18092001@gmail.com>",
+  "homepage": "https://mishynmykhailo.github.io/goweb-testtask/",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MishynMykhailo/goweb-testtask/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MishynMykhailo/goweb-testtask.git"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
