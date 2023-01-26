@@ -2,7 +2,8 @@
   "name": "goweb-testtask",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mishynmykhailo.github.io/goweb-testtask/",
+  "homepage": "https://mishynmykhailo.github.io/goweb-testtask",
+  "author": "Mishyn Mykhailo <misham18092001@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
