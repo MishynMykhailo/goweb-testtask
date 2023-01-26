@@ -88,21 +88,21 @@
 }
 .div {
   display: flex;
-  background-color: #ffffff;
+  background-color: var(--primary-text-color);
 }
 .preH2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-color);
   margin-bottom: 16px;
 }
 .h2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-color);
   margin-bottom: 24px;
 }
 .postH2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-color);
 }
 .ul {
   display: grid;
@@ -137,7 +137,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .social__ul {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +163,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.35;
-  color: #333333;
+  color: var(--secondary-text-color);
   margin-bottom: 8px;
 }
 .position {
@@ -172,5 +171,5 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
-  color: #333333;
+  color: var(--secondary-text-color);
 }

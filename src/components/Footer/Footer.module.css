@@ -24,7 +24,7 @@
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  background-color: #333333;
+  background-color: var(--secondary-text-color);
 }
 .padding {
   padding-top: 20px;
@@ -37,7 +37,7 @@
 }
 .p {
   text-align: center;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 .footer {
   margin-bottom: 12px;

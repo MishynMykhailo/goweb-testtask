@@ -120,6 +120,7 @@
   border: none;
   background-color: transparent;
   height: 150px;
+  transition: var(--main-transition);
 }
 .nextArrowModalBtn:hover,
 .nextArrowModalBtn:focus {
@@ -138,6 +139,7 @@
   border: none;
   background-color: transparent;
   height: 150px;
+  transition: var(--main-transition);
 }
 .prevArrowModalBtn:hover,
 .prevArrowModalBtn:focus {
@@ -145,19 +147,19 @@
 }
 .div {
   display: flex;
-  background-color: #ffffff;
+  background-color: var(--primary-text-color);
 }
 .preH2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-colo);
 }
 .h2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-colo);
 }
 .postH2 {
   text-align: center;
-  color: #333333;
+  color: var(--secondary-text-colo);
 }
 .ul {
   display: grid;

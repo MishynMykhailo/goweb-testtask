@@ -17,7 +17,7 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 1.23;
-    color: white;
+    color: var(--primary-text-color);
   }
   .btn {
     font-size: 18px;
@@ -42,7 +42,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 1.2;
-    color: white;
+    color: var(--primary-text-color);
   }
   .btn {
     font-size: 18px;
@@ -71,7 +71,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 1.35;
-    color: white;
+    color: var(--primary-text-color);
   }
   .btn {
     font-size: 18px;
@@ -118,7 +118,7 @@
   align-items: center;
   fill: var(--primary-text-color);
   background-color: var(--accent-color);
-  color: white;
+  color: var(--primary-text-color);
   border-radius: 5px;
   border: none;
   position: relative;
@@ -131,7 +131,7 @@
 }
 .btn:hover,
 .btn:focus {
-  background-color: #2ebf4f;
+  background-color: var(--accent-color-hover);
 }
 .arrowNext {
   margin-right: 8px;

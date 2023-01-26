@@ -99,28 +99,28 @@
   }
 }
 .div {
-  background-color: #28a745;
+  background-color: var(--accent-color);
 }
 
 .preH2 {
-  color: #ffffff;
+  color: var(--primary-text-color);
   margin-bottom: 16px;
 }
 .h2 {
-  color: white;
+  color: var(--primary-text-color);
   margin-bottom: 24px;
 }
 .postH2 {
-  color: #ffffff;
+  color: var(--primary-text-color);
   margin-bottom: 24px;
 }
 .btn {
   display: flex;
   padding: 16px 32px;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--primary-text-color);
   border-radius: 5px;
-  color: white;
+  color: var(--primary-text-color);
   align-items: center;
   transition: var(--main-transition);
 }

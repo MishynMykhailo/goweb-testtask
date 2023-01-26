@@ -10,33 +10,7 @@
   background-position: center;
   background-color: black;
 }
-/* .backgroundPeople {
-  background-image: url(../../images/images/home/people.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: black;
-  height: 220px;
-} */
-/* .ourServices {
-  background-color: #28a745;
-}
-.businessCases {
-  color: white;
-} */
-/* .coffeImg {
-  background-image: url(../../images/images/home/blog.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: black;
 
-  height: 247px;
-} */
-
-/* .ourTeam {
-  background-color: white;
-} */
 .contactPhoto {
   background-image: url(../../images/images/home/contact.jpg);
   background-repeat: no-repeat;
@@ -45,9 +19,3 @@
   background-color: black;
   height: 247px;
 }
-/* .feedBack {
-  background-color: #f4f4f4;
-} */
-/* .footer {
-  background-color: #333333;
-} */

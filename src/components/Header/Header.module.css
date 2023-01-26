@@ -34,7 +34,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
-    color: white;
+    color: var(--primary-text-color);
   }
   .img {
     margin-bottom: 0px;
@@ -87,10 +87,10 @@
 }
 .li {
   position: relative;
-
   transition: var(--main-transition);
 }
-.li:hover {
+.li:hover,
+.li:focus {
   opacity: 0.5;
 }
 .li:hover::after {
@@ -108,6 +108,5 @@
 
 .a {
   font-weight: 400;
-
-  color: white;
+  color: var(--primary-text-color);
 }

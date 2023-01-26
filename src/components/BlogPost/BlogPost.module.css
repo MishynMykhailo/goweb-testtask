@@ -87,27 +87,27 @@
   }
 }
 .div {
-  background-color: #0284d0;
+  background-color: var(--section-blog-color);
 }
 
 .preH2 {
   margin-bottom: 16px;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 .h2 {
   margin-bottom: 24px;
-  color: white;
+  color: var(--primary-text-color);
 }
 .postH2 {
   margin-bottom: 24px;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 .btn {
   padding: 16px 32px;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--primary-text-color);
   border-radius: 5px;
-  color: white;
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
@@ -116,6 +116,6 @@
 .btn:hover,
 .btn:focus {
   background-color: var(--primary-text-color);
-  color: #0284d0;
-  border-color: #0284d0;
+  color: var(--section-blog-color);
+  border-color: var(--section-blog-color);
 }

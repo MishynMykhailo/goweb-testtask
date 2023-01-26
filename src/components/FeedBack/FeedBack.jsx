@@ -48,9 +48,7 @@ const FeedBack = () => {
       <div className={s.padding}>
         <h2 className={s.h2}>Request Callback </h2>
         <form
-          name="feedback
-        
-        "
+          name="feedback"
           method="post"
           className={s.form}
           onSubmit={formSubmit}
