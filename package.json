@@ -2,7 +2,6 @@
   "name": "goweb-testtask",
   "version": "0.1.0",
   "private": true,
-  "author": "Mishyn Mykhailo <misham18092001@gmail.com>",
   "homepage": "https://mishynmykhailo.github.io/goweb-testtask/",
   "license": "ISC",
   "dependencies": {
