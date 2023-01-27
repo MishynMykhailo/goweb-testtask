@@ -28,7 +28,6 @@ const FeedBack = () => {
     }
   };
   const formHandlerSubmit = async (e) => {
-    e.preventDefault();
     const { email: emailTarget, name: nameTarget } = e.target.elements;
     const { name: nameEm, value: valueEm } = emailTarget;
     const { name: nameNa, value: valueNa } = nameTarget;
