@@ -1,32 +1,32 @@
-import cases1JPG1x from "../../images/images/cases/cases1.jpg";
-import cases1JPG2x from "../../images/images/cases/cases1@2x.jpg";
-import cases1WEBP1x from "../../images/images/cases/cases1.webp";
-import cases1WEBP2x from "../../images/images/cases/cases1@2x.webp";
+import cases1JPG1x from "../../images/cases/cases1.jpg";
+import cases1JPG2x from "../../images/cases/cases1@2x.jpg";
+import cases1WEBP1x from "../../images/cases/cases1.webp";
+import cases1WEBP2x from "../../images/cases/cases1@2x.webp";
 
-import cases2JPG1x from "../../images/images/cases/cases2.jpg";
-import cases2JPG2x from "../../images/images/cases/cases2@2x.jpg";
-import cases2WEBP1x from "../../images/images/cases/cases2.webp";
-import cases2WEBP2x from "../../images/images/cases/cases2@2x.webp";
+import cases2JPG1x from "../../images/cases/cases2.jpg";
+import cases2JPG2x from "../../images/cases/cases2@2x.jpg";
+import cases2WEBP1x from "../../images/cases/cases2.webp";
+import cases2WEBP2x from "../../images/cases/cases2@2x.webp";
 
-import cases3JPG1x from "../../images/images/cases/cases3.jpg";
-import cases3JPG2x from "../../images/images/cases/cases3@2x.jpg";
-import cases3WEBP1x from "../../images/images/cases/cases3.webp";
-import cases3WEBP2x from "../../images/images/cases/cases3@2x.webp";
+import cases3JPG1x from "../../images/cases/cases3.jpg";
+import cases3JPG2x from "../../images/cases/cases3@2x.jpg";
+import cases3WEBP1x from "../../images/cases/cases3.webp";
+import cases3WEBP2x from "../../images/cases/cases3@2x.webp";
 
-import cases4JPG1x from "../../images/images/cases/cases4.jpg";
-import cases4JPG2x from "../../images/images/cases/cases4@2x.jpg";
-import cases4WEBP1x from "../../images/images/cases/cases4.webp";
-import cases4WEBP2x from "../../images/images/cases/cases4@2x.webp";
+import cases4JPG1x from "../../images/cases/cases4.jpg";
+import cases4JPG2x from "../../images/cases/cases4@2x.jpg";
+import cases4WEBP1x from "../../images/cases/cases4.webp";
+import cases4WEBP2x from "../../images/cases/cases4@2x.webp";
 
-import cases5JPG1x from "../../images/images/cases/cases5.jpg";
-import cases5JPG2x from "../../images/images/cases/cases5@2x.jpg";
-import cases5WEBP1x from "../../images/images/cases/cases5.webp";
-import cases5WEBP2x from "../../images/images/cases/cases5@2x.webp";
+import cases5JPG1x from "../../images/cases/cases5.jpg";
+import cases5JPG2x from "../../images/cases/cases5@2x.jpg";
+import cases5WEBP1x from "../../images/cases/cases5.webp";
+import cases5WEBP2x from "../../images/cases/cases5@2x.webp";
 
-import cases7JPG1x from "../../images/images/cases/cases7.jpg";
-import cases7JPG2x from "../../images/images/cases/cases7@2x.jpg";
-import cases7WEBP1x from "../../images/images/cases/cases7.webp";
-import cases7WEBP2x from "../../images/images/cases/cases7@2x.webp";
+import cases7JPG1x from "../../images/cases/cases7.jpg";
+import cases7JPG2x from "../../images/cases/cases7@2x.jpg";
+import cases7WEBP1x from "../../images/cases/cases7.webp";
+import cases7WEBP2x from "../../images/cases/cases7@2x.webp";
 
 const buisnessCasesImages = [
   {

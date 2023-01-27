@@ -1,7 +1,7 @@
-import { ReactComponent as Ln } from "../../images/images/social/ln.svg";
-import { ReactComponent as Fb } from "../../images/images/social/fb.svg";
-import { ReactComponent as Tw } from "../../images/images/social/tw.svg";
-import { ReactComponent as Yt } from "../../images/images/social/yt.svg";
+import { ReactComponent as Ln } from "../../images/social/ln.svg";
+import { ReactComponent as Fb } from "../../images/social/fb.svg";
+import { ReactComponent as Tw } from "../../images/social/tw.svg";
+import { ReactComponent as Yt } from "../../images/social/yt.svg";
 
 const socialLink = [
   { name: "facebook", svg: <Fb /> },

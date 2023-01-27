@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import s from "./BusinessCases.module.css";
 import buisnessCasesImages from "../data/buisnessCasesImages";
-import ImagePictures from "../ImagePictures/ImagePictures";
+import ImagePictures from "../ImagePictures";
 import Modal from "../Modal";
-import nextArrowModal from "../../images/images/gallery/next.png";
-import prevArrowModal from "../../images/images/gallery/prev.png";
+import nextArrowModal from "../../images/gallery/next.png";
+import prevArrowModal from "../../images/gallery/prev.png";
 const BusinessCases = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [photoId, setPhotoId] = useState(null);
@@ -15,7 +15,7 @@ const BusinessCases = () => {
   };
   const modalButtonHandler = (e) => {
     const { name } = e.currentTarget;
-    console.log(name);
+
     switch (name) {
       case "nextArrowModalBtn":
         setPhotoId((prevState) => {
@@ -53,8 +53,42 @@ const BusinessCases = () => {
         break;
     }
   };
+
   return (
     <div className={s.div} id="Cases">
+      <div className={s.padding}>
+        <p className={s.preH2}>This is what we do</p>
+        <h2 className={s.h2}>Business Cases</h2>
+        <p className={s.postH2}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          sapiente!
+        </p>
+        <ul className={s.ul}>
+          {buisnessCasesImages.map(
+            ({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
+              return (
+                <li
+                  key={id}
+                  onClick={() => {
+                    setIsOpenModal(true);
+                    setPhotoId({ id, jpg1x, alt });
+                  }}
+                >
+                  <ImagePictures
+                    key={id}
+                    jpg1x={jpg1x}
+                    jpg2x={jpg2x}
+                    webp1x={webp1x}
+                    webp2x={webp2x}
+                    alt={alt}
+                    className={s.img}
+                  />
+                </li>
+              );
+            }
+          )}
+        </ul>
+      </div>
       {isOpenModal && (
         <Modal onClose={toggleMode}>
           <div className={s.modalDiv}>
@@ -97,39 +131,6 @@ const BusinessCases = () => {
           </div>
         </Modal>
       )}
-      <div className={s.padding}>
-        <p className={s.preH2}>This is what we do</p>
-        <h2 className={s.h2}>Business Cases</h2>
-        <p className={s.postH2}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </p>
-        <ul className={s.ul}>
-          {buisnessCasesImages.map(
-            ({ id, jpg1x, jpg2x, webp1x, webp2x, alt }) => {
-              return (
-                <li
-                  key={id}
-                  onClick={() => {
-                    setIsOpenModal(true);
-                    setPhotoId({ id, jpg1x, alt });
-                  }}
-                >
-                  <ImagePictures
-                    key={id}
-                    jpg1x={jpg1x}
-                    jpg2x={jpg2x}
-                    webp1x={webp1x}
-                    webp2x={webp2x}
-                    alt={alt}
-                    className={s.img}
-                  />
-                </li>
-              );
-            }
-          )}
-        </ul>
-      </div>
     </div>
   );
 };

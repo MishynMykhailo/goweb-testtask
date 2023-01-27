@@ -13,7 +13,7 @@ const ImagePictures = ({
     <picture key={id}>
       <source srcSet={`${webp2x} 2x, ${webp1x} 1x`} type="image/webp" />
       <source srcSet={`${jpg2x} 2x, ${jpg1x} 1x`} type="image/jpeg" />
-      <img className={className} src="#" alt={alt} />
+      <img className={className} src="#" alt={alt} loading="lazy" />
     </picture>
   );
 };

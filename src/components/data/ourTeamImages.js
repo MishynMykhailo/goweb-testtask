@@ -1,17 +1,17 @@
-import person1JPG1x from "../../images/images/team/person1.jpg";
-import person1JPG2x from "../../images/images/team/person1@2x.jpg";
-import person1WEBP1x from "../../images/images/team/person1.webp";
-import person1WEBP2x from "../../images/images/team/person1@2x.webp";
+import person1JPG1x from "../../images/team/person1.jpg";
+import person1JPG2x from "../../images/team/person1@2x.jpg";
+import person1WEBP1x from "../../images/team/person1.webp";
+import person1WEBP2x from "../../images/team/person1@2x.webp";
 
-import person2JPG1x from "../../images/images/team/person2.jpg";
-import person2JPG2x from "../../images/images/team/person2@2x.jpg";
-import person2WEBP1x from "../../images/images/team/person2.webp";
-import person2WEBP2x from "../../images/images/team/person2@2x.webp";
+import person2JPG1x from "../../images/team/person2.jpg";
+import person2JPG2x from "../../images/team/person2@2x.jpg";
+import person2WEBP1x from "../../images/team/person2.webp";
+import person2WEBP2x from "../../images/team/person2@2x.webp";
 
-import person3JPG1x from "../../images/images/team/person3.jpg";
-import person3JPG2x from "../../images/images/team/person3@2x.jpg";
-import person3WEBP1x from "../../images/images/team/person3.webp";
-import person3WEBP2x from "../../images/images/team/person3@2x.webp";
+import person3JPG1x from "../../images/team/person3.jpg";
+import person3JPG2x from "../../images/team/person3@2x.jpg";
+import person3WEBP1x from "../../images/team/person3.webp";
+import person3WEBP2x from "../../images/team/person3@2x.webp";
 
 const ourTeamImages = [
   {

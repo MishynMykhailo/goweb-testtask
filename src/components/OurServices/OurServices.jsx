@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./OurServices.module.css";
 import ourServicesImages from "../data/ourServicesImages";
-import ImagePictures from "../ImagePictures/ImagePictures";
+import ImagePictures from "../ImagePictures";
 const OurServices = () => {
   return (
     <div className={s.div} id="About">

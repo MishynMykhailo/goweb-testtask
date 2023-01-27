@@ -1,7 +1,6 @@
 import React from "react";
-
 import s from "./Hero.module.css";
-import { ReactComponent as ArrowNext } from "../../images/images/next.svg";
+import { ReactComponent as ArrowNext } from "../../images/next.svg";
 const Hero = () => {
   return (
     <>

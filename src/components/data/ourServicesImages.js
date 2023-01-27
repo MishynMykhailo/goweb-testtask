@@ -1,7 +1,7 @@
-import peopleJPG1x from "../../images/images/home/people.jpg";
-import peopleJPG2x from "../../images/images/home/people@2x.jpg";
-import peopleWEBP1x from "../../images/images/home/people.webp";
-import peopleWEBP2x from "../../images/images/home/people@2x.webp";
+import peopleJPG1x from "../../images/home/people.jpg";
+import peopleJPG2x from "../../images/home/people@2x.jpg";
+import peopleWEBP1x from "../../images/home/people.webp";
+import peopleWEBP2x from "../../images/home/people@2x.webp";
 
 const ourServicesImages = [
   {

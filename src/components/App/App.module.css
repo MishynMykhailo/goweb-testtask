@@ -4,7 +4,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../../images/images/home/showcase.jpg);
+    url(../../images/home/showcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
 }
 
 .contactPhoto {
-  background-image: url(../../images/images/home/contact.jpg);
+  background-image: url(../../images/home/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

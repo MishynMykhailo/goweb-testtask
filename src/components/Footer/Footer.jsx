@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Footer.module.css";
-import SocialLink from "../SocialLink/SocialLink";
+import SocialLink from "../SocialLink";
 const Footer = () => {
   return (
     <div className={s.div}>

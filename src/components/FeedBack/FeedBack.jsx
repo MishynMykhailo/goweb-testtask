@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import s from "./FeedBack.module.css";
 import feedbackImages from "../data/feedbackImages";
-import { ReactComponent as ErrorImg } from "../../images/images/form/worning.svg";
-import ImagePictures from "../ImagePictures/ImagePictures";
+import { ReactComponent as ErrorImg } from "../../images/form/worning.svg";
+import ImagePictures from "../ImagePictures";
 
 const encode = (data) => {
   return Object.keys(data)

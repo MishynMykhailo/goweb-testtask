@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./BlogPost.module.css";
 import blogPostImages from "../data/blogPostImages";
-import ImagePictures from "../ImagePictures/ImagePictures";
+import ImagePictures from "../ImagePictures";
 
 const BlogPost = () => {
   return (
