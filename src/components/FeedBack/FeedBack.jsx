@@ -28,6 +28,11 @@ const FeedBack = () => {
     }
   };
   const formHandlerSubmit = async (e) => {
+    if (email.trim() === "" || ![...email].includes("@")) {
+      e.preventDefault();
+      setErrorValidation(true);
+      return;
+    }
     const { email: emailTarget, name: nameTarget } = e.target.elements;
     const { name: nameEm, value: valueEm } = emailTarget;
     const { name: nameNa, value: valueNa } = nameTarget;
@@ -35,11 +40,6 @@ const FeedBack = () => {
       [nameEm]: valueEm,
       [nameNa]: valueNa,
     };
-    console.log(inputValues);
-    if (email.trim() === "" || ![...email].includes("@")) {
-      setErrorValidation(true);
-      return;
-    }
     setErrorValidation(false);
     reset();
 
